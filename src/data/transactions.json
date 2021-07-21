@@ -1,0 +1,106 @@
+[{
+  "id": 1,
+  "customerId": 1,
+  "amount": 50,
+  "date": "2021-03-01"
+}, {
+  "id": 2,
+  "customerId": 1,
+  "amount": 130,
+  "date": "2021-03-15"
+}, {
+  "id": 3,
+  "customerId": 1,
+  "amount": 110,
+  "date": "2021-03-24"
+}, {
+  "id": 4,
+  "customerId": 1,
+  "amount": 20,
+  "date": "2021-04-06"
+}, {
+  "id": 5,
+  "customerId": 1,
+  "amount": 35,
+  "date": "2021-04-21"
+}, {
+  "id": 6,
+  "customerId": 1,
+  "amount": 200,
+  "date": "2021-04-27"
+}, {
+  "id": 7,
+  "customerId": 1,
+  "amount": 180,
+  "date": "2021-05-03"
+}, {
+  "id": 8,
+  "customerId": 2,
+  "amount": 50,
+  "date": "2021-03-02"
+}, {
+  "id": 9,
+  "customerId": 2,
+  "amount": 15,
+  "date": "2021-03-12"
+}, {
+  "id": 10,
+  "customerId": 2,
+  "amount": 48,
+  "date": "2021-03-22"
+}, {
+  "id": 11,
+  "customerId": 2,
+  "amount": 142,
+  "date": "2021-04-05"
+}, {
+  "id": 12,
+  "customerId": 2,
+  "amount": 175,
+  "date": "2021-04-18"
+}, {
+  "id": 13,
+  "customerId": 2,
+  "amount": 86,
+  "date": "2021-04-30"
+}, {
+  "id": 14,
+  "customerId": 2,
+  "amount": 75,
+  "date": "2021-05-02"
+}, {
+  "id": 15,
+  "customerId": 3,
+  "amount": 10,
+  "date": "2021-03-07"
+}, {
+  "id": 16,
+  "customerId": 3,
+  "amount": 110,
+  "date": "2021-03-12"
+}, {
+  "id": 17,
+  "customerId": 3,
+  "amount": 48,
+  "date": "2021-03-19"
+}, {
+  "id": 18,
+  "customerId": 3,
+  "amount": 189,
+  "date": "2021-04-21"
+}, {
+  "id": 19,
+  "customerId": 3,
+  "amount": 121,
+  "date": "2021-04-23"
+}, {
+  "id": 20,
+  "customerId": 3,
+  "amount": 48,
+  "date": "2021-04-27"
+}, {
+  "id": 21,
+  "customerId": 3,
+  "amount": 89,
+  "date": "2021-05-01"
+}]
