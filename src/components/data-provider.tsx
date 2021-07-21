@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 import { createContext, createContextHook } from "./context-utils";
 import CUSTOMERS from '../data/customers.json';
 import TRANSACTIONS from '../data/transactions.json';
@@ -9,6 +9,7 @@ import { DateTime } from "luxon";
 export interface ContextProps {
   customers: Customer[];
   transactions: Transaction[];
+  getTransactions: (customerId: Customer['id']) => Transaction[];
 }
 
 export interface Props {
@@ -25,7 +26,10 @@ export function DataProvider({ children }: Props): JSX.Element {
     ...item,
     date: DateTime.fromISO(item.date)
   })), []);
+  const getTransactions = useCallback((customerId: Customer['id']) => {
+    return transactions.filter(item => item.customerId === customerId);
+  }, [transactions])
   return (
-    <DataContext.Provider value={{ customers, transactions }}>{children}</DataContext.Provider>
+    <DataContext.Provider value={{ customers, transactions, getTransactions }}>{children}</DataContext.Provider>
   );
 }
