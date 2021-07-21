@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { Customer } from "../models/customer";
 import { useData } from "./data-provider";
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@material-ui/core";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@material-ui/core";
 
 export interface Props {
   customer: Customer;
@@ -12,26 +12,30 @@ export function CustomerTransactions({customer}: Props) {
   const transactions = useMemo(() => getTransactions(customer.id), [customer, getTransactions]);
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer>
       <Table>
         <TableHead>
           <TableRow>
             <TableCell>No.</TableCell>
             <TableCell align="right">Date</TableCell>
             <TableCell align="right">Amount [$]</TableCell>
+            <TableCell align="right">Points</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {transactions.map((transaction, idx) =>
             <TableRow key={transaction.id}>
               <TableCell component="th" scope="row">
-                {idx}
+                {idx + 1}
               </TableCell>
               <TableCell align={'right'}>
                 {transaction.date.toLocaleString()}
               </TableCell>
               <TableCell align={'right'}>
                 {transaction.amount}
+              </TableCell>
+              <TableCell align={'right'}>
+                {transaction.points}
               </TableCell>
             </TableRow>
           )}

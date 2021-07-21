@@ -13,4 +13,5 @@ export interface Transaction {
   customerId: Customer['id'];
   amount: number;
   date: DateTime;
+  points: number;
 }
