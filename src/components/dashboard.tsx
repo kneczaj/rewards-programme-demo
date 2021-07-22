@@ -16,7 +16,7 @@ export function Dashboard(): JSX.Element {
     return <>No customers</>;
   }
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={0}>
       <Grid item xs={2}>
         <List
           component="nav"

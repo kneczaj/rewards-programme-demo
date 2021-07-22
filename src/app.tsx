@@ -1,5 +1,4 @@
 import React from 'react';
-import './app.css';
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { DataProvider } from "./components/data-provider";
 import { Dashboard } from "./components/dashboard";
