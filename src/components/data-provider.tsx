@@ -21,7 +21,7 @@ export const useData = createContextHook<ContextProps>(DataContext);
 
 export function getPoints(amount: number): number {
   const over100 = (Math.max(amount, 100) - 100)*2;
-  const over50 = Math.max(Math.min(amount, 100), 50);
+  const over50 = Math.max(Math.min(amount, 100), 50) - 50;
   return over50 + over100;
 }
 
